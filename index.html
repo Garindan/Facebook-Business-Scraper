@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Facebook Business Scraper by Garindan</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Facebook Business Scraper</h1>
+        <h2>A Web Scraper for Facebook Business Data | Marketing</h2>
+        <a href="https://github.com/Garindan/facebook-business-scraper" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="facebook-business-scraper-for-marketing" class="anchor" href="#facebook-business-scraper-for-marketing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Facebook Business Scraper for Marketing</h1>
+
+<p>A <strong>Facebook scraper</strong> for business intelligence by targeted location. This python scraper can assist in driving various campaigns if you engage in Business-to-Business (B2B) marketing with the following constraint:</p>
+
+<p><img src="https://github.com/Garindan/facebook-business-scraper/raw/master/Sample%20Data.png" alt="Sample of Marketing Business Data"></p>
+
+<blockquote>
+<p>You will need to follow Facebook's Terms of Service (ToS), and applicable laws in your region. I or we take no responsibility for the use of this tool.</p>
+</blockquote>
+
+<h3>
+<a id="resources" class="anchor" href="#resources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Resources</h3>
+
+<hr>
+
+<div align="center" id="resources">
+<img alt="Project Icon" src="https://github.com/Garindan/facebook-business-scraper/raw/master/Project%20Icon.png">
+
+<p align="left">This project is provided to you by Jussive. A local business SEO provider who offers SEO for Google, Managed Hosting, and Website Development options to revise or create content which improves search rates.</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Link</th> 
+  </tr>
+  <tr>
+    <td>Website</td> 
+    <td><a href="https://www.jussive.com" alt="Local SEO Service">https://www.jussive.com</a></td>
+  </tr>
+  <tr>
+    <td>Blog</td>
+    <td><a href="https://www.jussive.com/b" alt="SEO &amp; SEM Blog">https://www.jussive.com/b</a></td> 
+  </tr>
+</table>
+</div>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
+
+<hr>
+
+<h4>
+<a id="debian-and-ubuntu" class="anchor" href="#debian-and-ubuntu" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Debian and Ubuntu</h4>
+
+<p><strong>System Packages</strong></p>
+
+<p>Install all required system packages if not already installed</p>
+
+<p><code>apt-get update &amp;&amp; apt-get upgrade -y; apt-get install python python-pip python-mysqldb ca-certificates git -y</code></p>
+
+<p><strong>Python Library's</strong></p>
+
+<p>Install all required Python libraries if not already installed</p>
+
+<p><code>pip install argparse selenium bs4</code></p>
+
+<p><strong>Simple PhantomJS Installation</strong></p>
+
+<p>Download the latest PhantomJS package and extract</p>
+
+<p><code>cd /tmp; wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2; tar xvfj phantomjs-2.1.1-linux-x86_64.tar.bz2</code></p>
+
+<p>Cleanup and create symbolic links</p>
+
+<p><code>rm -rf /tmp/phantomjs-*.tar.bz2; mv phantomjs-2.1.1-linux-x86_64 /opt/phantomjs; ln -sf /opt/phantomjs/bin/phantomjs /usr/local/bin</code></p>
+
+<p><strong>MySQL Installation and Configuration</strong></p>
+
+<p>Install and Configure MySQL</p>
+
+<p><code>apt-get install mysql-server mysql-client</code></p>
+
+<p>Connect to the database server</p>
+
+<p><code>mysql -u root -p</code></p>
+
+<p>Create a database to utilize</p>
+
+<p><code>CREATE DATABASE Facebook;</code></p>
+
+<p>Create the table utilized to store data</p>
+
+<p><code>CREATE TABLE Facebook.business_pages (
+id INT NOT NULL AUTO_INCREMENT,
+service VARCHAR(250),
+page VARCHAR(250),
+name VARCHAR(250),
+search_location VARCHAR(250),
+location VARCHAR(250),
+website VARCHAR(250),
+phone VARCHAR(250),
+email VARCHAR(250),
+PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;</code></p>
+
+<p>Exit the MySQL prompt</p>
+
+<p><code>exit;</code></p>
+
+<p><strong>Web scraper</strong></p>
+
+<p>Install the Facebook web scraper</p>
+
+<p><code>cd /opt; git clone https://github.com/Garindan/facebook-business-scraper/</code></p>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
+
+<hr>
+
+<h4>
+<a id="modes-of-operation" class="anchor" href="#modes-of-operation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Modes of Operation</h4>
+
+<p>The Facebook business scraper comes with two modes of operation (gather or get) which is specified via the command line argument '-m' or '--mode'. </p>
+
+<h5>
+<a id="gather" class="anchor" href="#gather" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gather</h5>
+
+<p>The '<strong>gather</strong>' mode scrapes information for a specific location and service ('-l Miami, Florida' or -'--location Florida'), and stores the Facebook business page in the database for processing. </p>
+
+<p>Notes: <em>Facebook may rate limit you for using this method, and providing another account should fix any issues if you start getting minimal results. Should the script error out or stop producing redefine your service lists to include only results you have not processed to avoid database duplicates. Do not forget that you need to comply with Facebook's ToS.</em></p>
+
+<p><strong>Mode: 'gather' Usage Notes</strong></p>
+
+<p>A custom service list can be defined by using '--services services.txt' or the script will try to gather all business information for every associated service available. The services file should contain one service per line (the default services.txt file contains all possible services) if utilized.</p>
+
+<p>The scroll page command line argument is meant to set memory limitations or to deliver fast results. You'll get  a connection refused if all the available RAM / Memory is used. Typically, you will not need to scroll over 2,000 times for one service if it is for a state.</p>
+
+<p>Facebook authentication is required for scraping data in this mode</p>
+
+<p><strong>Mode: 'gather' Usage Example</strong></p>
+
+<p><code>python /opt/facebook-business-scraper/main.py --location Florida --mode gather --scroll 10 --services "/opt/facebook-business-scraper/services.txt" --dbip 127.0.0.1 --database Facebook --dbuser root --dbpasswd examplepass --fbuser example@hotmail.com --fbpasswd examplepass</code></p>
+
+<h5>
+<a id="get" class="anchor" href="#get" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get</h5>
+
+<p>The second mode of operation is '<strong>get</strong>', and it will go through all information in the database that has not yet been processed to retrieve business contact information. Database entries that do match your previous search location or cannot be parsed by name will be deleted.</p>
+
+<p>Note: <em>Again, if you get a connection refused you're likely running to many threads for the amount of resources you can utilize (CPU, Memory, and Bandwidth).There will be some pages that may not be able to be processed, and you can delete these bad pages in the table by running the following MySQL statement:</em></p>
+
+<p><code>DELETE FROM Facebook.business_pages WHERE name IS NONE;</code></p>
+
+<p><strong>Mode: 'get' Usage Notes</strong></p>
+
+<p>This mode of operation is multi-threaded, and you should be conscious of your resource limitations (CPU and Network Bandwidth). I recommend running only 10 threads until you know your limitations (i.e. '--threads 10'), and would run this two to three times to ensure you've processed all the information you can before deleting bad pages as described above.</p>
+
+<p><strong>Mode: 'get' Usage Example</strong></p>
+
+<p><code>python /opt/facebook-business-scraper/main.py --mode get --threads 10 --dbip 127.0.0.1 --database Facebook --dbuser root --dbpasswd examplepass</code></p>
+
+<h4>
+<a id="general-usage-information" class="anchor" href="#general-usage-information" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>General Usage Information</h4>
+
+<p><code># python /opt/facebook-business-scraper/main.py -h</code></p>
+
+<p></p><div id="usage">
+usage: usage: main.py [-h] [-l LOCATION] -m MODE [-s SCROLL] [-t THREADS]<br>
+            [--services SERVICES] -ip DBIP -db DATABASE --dbuser DBUSER<br>
+             --dbpasswd DBPASSWD [--fbuser FBUSER] [--fbpasswd FBPASSWD]<br><br>
+
+<p>Facebook Business Scraper - <a href="https://github.com/Garindan/facebook-business-scraper">https://github.com/Garindan/facebook-business-scraper</a></p>
+
+<p><em>optional arguments</em>:<br>
+   -h, --help<br>
+       show this help message and exit<br>
+   -l LOCATION, --location LOCATION<br>
+       Provide a target location (i.e. Flordia or Miami, Flordia)<br>
+   -m MODE, --mode MODE<br>
+       Gather business pages for associated services (gather) or try to get contact information for pages in table (get)<br>
+   -s SCROLL, --scroll SCROLL<br>
+       Page result scroll limit (i.e. 1000 - the higher the limit the more results you could obtain) which aids in memory management<br>
+   -t THREADS, --threads THREADS<br>
+       Provide the number of threads you'd like to use for getting contact information on pages (i.e. 20)<br>
+   --services SERVICES<br>
+       Define a custom service list file (i.e. services.txt)<br>
+   -ip DATABASE_IP, --dbip DATABASE_IP<br>
+       IP address of database (i.e. 127.0.0.1)<br>
+   -db DATABASE, --database DATABASE<br>
+       Provide database name<br>
+   --dbuser DATABASE_USER<br>
+       Provide user login name for the database<br>
+   --dbpasswd DATABASE_PASSWD<br>
+       Provide user login password for the database<br>
+   --fbuser FACEBOOK_USER<br>
+       Provide your facebook Username<br>
+   --fbpasswd FACEBOOK_PASSWD<br>
+       Provide your facebook Username<br>
+</p>
+<div></div>
+</div>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/Garindan/facebook-business-scraper/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/Garindan/facebook-business-scraper/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/Garindan/facebook-business-scraper"></a> is maintained by <a href="https://github.com/Garindan">Garindan</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
