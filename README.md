@@ -9,11 +9,7 @@ A **Facebook scraper** for business intelligence by targeted location. This pyth
 ### Resources
 ***
 <div align="center" id="resources">
-<img alt="Project Icon" src="https://github.com/Garindan/facebook-business-scraper/raw/master/Project%20Icon.png">
-
-<p align="left">This project is provided to you by Jussive. A local business SEO provider who offers SEO for Google, Managed Hosting, and Website Development options to revise or create content which improves search rates.</p>
-
-<div align="center">
+<img alt="Project Icon" src="https://github.com/Garindan/facebook-business-scraper/raw/master/Project%20Icon.png"><div align="center">
 <table>
   <tr>
     <th>Name</th>
@@ -29,7 +25,8 @@ A **Facebook scraper** for business intelligence by targeted location. This pyth
   </tr>
 </table>
 </div>
-</div>
+
+<p align="left">This project is provided to you by Jussive. A local business SEO provider who offers SEO for Google, Managed Hosting, and Website Development options to revise or create content which improves search rates.</p>
 
 ### Installation
 ***
