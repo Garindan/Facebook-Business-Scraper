@@ -13,6 +13,7 @@ A **Facebook scraper** for business intelligence by targeted location. This pyth
 
 <p align="left">This project is provided to you by Jussive. A local business SEO provider who offers SEO for Google, Managed Hosting, and Website Development options to revise or create content which improves search rates.</p>
 
+<div align="center>
 <table>
   <tr>
     <th>Name</th>
@@ -27,6 +28,7 @@ A **Facebook scraper** for business intelligence by targeted location. This pyth
     <td><a href="https://www.jussive.com/b" alt="SEO & SEM Blog">https://www.jussive.com/b</a></td> 
   </tr>
 </table>
+</div>
 </div>
 
 ### Installation
