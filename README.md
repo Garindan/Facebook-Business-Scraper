@@ -79,7 +79,7 @@ Exit the MySQL prompt
 
 Install the Facebook web scraper
 
-`cd /opt; git clone https://github.com/Garindan/facebook-business-scraper/`
+`cd /opt; git clone https://github.com/Garindan/facebook-business-scraper.git`
 
 ### Usage
 ***
