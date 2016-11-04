@@ -9,7 +9,7 @@ A **Facebook scraper** for business intelligence by targeted location. This pyth
 ### Resources
 ***
 <div align="center" id="resources">
-<img alt="Project Icon" src="https://github.com/Garindan/facebook-business-scraper/raw/master/Project%20Icon.png"><div align="center">
+<img alt="Project Icon" src="https://github.com/Garindan/facebook-business-scraper/raw/master/Project%20Icon.png">
 <table>
   <tr>
     <th>Name</th>
