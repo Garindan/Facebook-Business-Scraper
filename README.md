@@ -2,14 +2,14 @@
 
 A **Facebook scraper** for business intelligence by targeted location. This python scraper can assist in driving various campaigns if you engage in Business-to-Business (B2B) marketing with the following constraint:
 
-![Sample of Marketing Business Data](https://github.com/Garindan/facebook-business-scraper/raw/master/Sample%20Data.png)
+<img alt="Sample Data" src="https://github.com/Garindan/facebook-business-scraper/blob/gh-pages/images/Sample%20Data.png">
 
 > You will need to follow Facebook's Terms of Service (ToS), and applicable laws in your region. I or we take no responsibility for the use of this tool.
 
 ### Resources
 ***
 <div align="center" id="resources">
-<img alt="Project Icon" src="https://github.com/Garindan/facebook-business-scraper/raw/master/Project%20Icon.png"><br>
+<img alt="Project Icon" src="https://github.com/Garindan/facebook-business-scraper/blob/gh-pages/images/Project%20Icon.png"><br>
 
 Website - <a href="https://www.jussive.com" alt="Local SEO Service">https://www.jussive.com</a> | Blog - <a href="https://www.jussive.com/b" alt="SEO & SEM Blog">https://www.jussive.com/b</a>
 </div><br>
