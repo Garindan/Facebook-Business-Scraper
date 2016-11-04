@@ -10,6 +10,8 @@ A **Facebook scraper** for business intelligence by targeted location. This pyth
 ***
 <div align="center" id="resources">
 <img alt="Project Icon" src="https://github.com/Garindan/facebook-business-scraper/raw/master/Project%20Icon.png">
+Website - <a href="https://www.jussive.com" alt="Local SEO Service">https://www.jussive.com</a> | Blog - <a href="https://www.jussive.com/b" alt="SEO & SEM Blog">https://www.jussive.com/b</a>
+
 <table>
   <tr>
     <th>Name</th>
