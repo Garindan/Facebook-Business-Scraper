@@ -11,7 +11,7 @@ A **Facebook scraper** for business intelligence by targeted location. This pyth
 <div align="center" id="resources">
 <img alt="Project Icon" src="https://github.com/Garindan/facebook-business-scraper/blob/gh-pages/images/Project%20Icon.png"><br>
 
-Website - <a href="https://www.jussive.com" alt="Local SEO Service">https://www.jussive.com</a> | Blog - <a href="https://www.jussive.com/b" alt="SEO & SEM Blog">https://www.jussive.com/b</a><br>
+Website - <a href="https://www.jussive.com" alt="Local SEO Service">https://www.jussive.com</a> | Blog - <a href="https://www.jussive.com/b" alt="SEO & SEM Blog">https://www.jussive.com/b</a><br><br>
 
 <img alt="PayPal Donation" type="image" rel="nofollow" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="Donations appreciated through PayPal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GK9J6CNU9LDP2">
 </div>
