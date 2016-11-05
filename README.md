@@ -12,9 +12,9 @@ A **Facebook scraper** for business intelligence by targeted location. This pyth
 <img alt="Project Icon" src="https://github.com/Garindan/facebook-business-scraper/blob/gh-pages/images/Project%20Icon.png"><br>
 
 Website - <a href="https://www.jussive.com" alt="Local SEO Service">https://www.jussive.com</a> | Blog - <a href="https://www.jussive.com/b" alt="SEO & SEM Blog">https://www.jussive.com/b</a><br><br>
-</div>
 
 [![Donations appreciated through PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GK9J6CNU9LDP2)
+</div>
 
 <br><p align="left">This project is provided to you by Jussive. A local business SEO provider who offers SEO for Google, Managed Hosting, and Website Development options to revise or create content which improves search rates.</p>
 
