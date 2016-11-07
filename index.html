@@ -172,7 +172,7 @@ PRIMARY KEY (id)
 
 <p>Note: <em>Again, if you get a connection refused you're likely running to many threads for the amount of resources you can utilize (CPU, Memory, and Bandwidth).There will be some pages that may not be able to be processed, and you can delete these bad pages in the table by running the following MySQL statement:</em></p>
 
-<p><code>DELETE FROM Facebook.business_pages WHERE name IS NONE;</code></p>
+<p><code>DELETE FROM Facebook.business_pages WHERE name IS NULL;</code></p>
 
 <p><strong>Mode: 'get' Usage Notes</strong></p>
 
