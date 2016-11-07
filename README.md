@@ -114,7 +114,7 @@ The second mode of operation is '**get**', and it will go through all informatio
 
 Note: _Again, if you get a connection refused you're likely running to many threads for the amount of resources you can utilize (CPU, Memory, and Bandwidth).There will be some pages that may not be able to be processed, and you can delete these bad pages in the table by running the following MySQL statement:_
 
-`DELETE FROM Facebook.business_pages WHERE name IS NONE;`
+`DELETE FROM Facebook.business_pages WHERE name IS NULL;`
 
 **Mode: 'get' Usage Notes**
 
